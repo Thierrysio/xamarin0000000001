@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin0000000001.Views.SalarieView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="{Binding LeSalarie.Photo}" />
+            <Label Text="{Binding LeSalarie.Nom}" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Label Text="{Binding LeSalarie.Prenom}" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Button Text="Nouveau salarié" 
+                    Command="{Binding CommandeButtonNewSalarie}"/>
+            <Button Text="Liste"
+                    Command="{Binding CommandeButtonListe}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
